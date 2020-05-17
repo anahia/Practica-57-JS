@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 57-->
+
+<head>
+    <title>Practica 57</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        function big() {
+            var ru;
+            var f;
+            ru = arguments[0];
+            for (f = 1; f < arguments.length; f++) {
+                if (arguments[f] > ru) {
+                    ru = arguments[f];
+                }
+            }
+            return ru;
+        }
+        document.write('This is the largest number:');
+        document.write('<br>');
+        document.write(big(12, 25, 74, 96, 45, 36, 70));
+    </script>
+
+</body>
+
+</html>
